@@ -1,6 +1,6 @@
 {
   "name": "@pocketradar/uuid-mongodb",
-  "version": "2.5.3",
+  "version": "2.5.4",
   "description": "Generates and parses MongoDB BSON UUIDs. Plays nicely with others including the MongoDB native driver and Mongoose.",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
@@ -30,7 +30,7 @@
     "uuid": "^9.0.0"
   },
   "peerDependencies": {
-    "mongodb": "4.9.x || 4.10.x || 4.11.x"
+    "mongodb": "4.9.x || 4.10.x || 4.11.x || 4.12.x"
   },
   "devDependencies": {
     "eslint": "^8.26.0",
