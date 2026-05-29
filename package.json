@@ -1,6 +1,6 @@
 {
   "name": "@pocketradar/uuid-mongodb",
-  "version": "2.5.8",
+  "version": "2.5.9",
   "description": "Generates and parses MongoDB BSON UUIDs. Plays nicely with others including the MongoDB native driver and Mongoose.",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/pocketradar/uuid-mongodb.git"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "uuid",
@@ -27,7 +27,11 @@
   },
   "homepage": "https://github.com/pocketradar/uuid-mongodb#readme",
   "dependencies": {
-    "uuid": "^9.0.1"
+    "uuid": "^11.1.1"
+  },
+  "overrides": {
+    "serialize-javascript": "^7.0.5",
+    "diff": "^9.0.0"
   },
   "peerDependencies": {
     "mongodb": "7.x || 6.x || 5.x || 4.11.x || 4.12.x || 4.13.x"
@@ -35,9 +39,9 @@
   "devDependencies": {
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.2",
-    "eslint-plugin-prettier": "^5.5.3",
-    "mocha": "^10.8.2",
-    "mongodb": "^6.18.0",
-    "prettier": "^3.6.2"
+    "eslint-plugin-prettier": "^5.5.6",
+    "mocha": "^11.7.6",
+    "mongodb": "^6.21.0",
+    "prettier": "^3.8.3"
   }
 }
